@@ -54,13 +54,13 @@
         </a>
         <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('super-admin.modules.index') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>All Modules</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('super-admin.modules.create') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Upload Module</p>
                 </a>
