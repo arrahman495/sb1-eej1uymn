@@ -1,0 +1,122 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-header .navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.content-wrapper {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+    border-radius: 8px;
+}
+
+.info-box {
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+    border-radius: 8px;
+}
+
+.btn-app {
+    border-radius: 8px;
+    position: relative;
+    padding: 15px 5px;
+    margin: 0 0 10px 10px;
+    min-width: 80px;
+    height: 60px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-app:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.login-page {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Status badges */
+.badge-online {
+    background-color: #28a745;
+}
+
+.badge-offline {
+    background-color: #dc3545;
+}
+
+.badge-pending {
+    background-color: #ffc107;
+}
+
+/* Data table custom styles */
+.data-table th {
+    border-top: none;
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.data-table td {
+    vertical-align: middle;
+}
+
+/* Module status indicators */
+.module-active {
+    border-left: 4px solid #28a745;
+}
+
+.module-inactive {
+    border-left: 4px solid #ffc107;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+    transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+}
