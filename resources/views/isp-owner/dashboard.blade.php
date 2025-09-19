@@ -25,13 +25,13 @@
         </a>
         <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('isp-owner.domains.index') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>My Domains</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('isp-owner.domains.create') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Add Domain</p>
                 </a>
@@ -325,13 +325,13 @@
                     <div class="text-center text-muted">
                         <i class="fas fa-globe fa-3x mb-3"></i><br>
                         No domains added yet.<br>
-                        <a href="#" class="text-primary">Add your first domain</a>
+                        <a href="{{ route('isp-owner.domains.create') }}" class="text-primary">Add your first domain</a>
                     </div>
                     @endforelse
                 </div>
                 @if($recent_domains->count() > 0)
                 <div class="card-footer text-center">
-                    <a href="#" class="text-primary">View All Domains</a>
+                    <a href="{{ route('isp-owner.domains.index') }}" class="text-primary">View All Domains</a>
                 </div>
                 @endif
             </div>
